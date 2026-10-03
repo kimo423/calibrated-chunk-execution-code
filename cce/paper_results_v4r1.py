@@ -188,7 +188,7 @@ def main():
             'ManiSkill五条策略锚定路线未过G0，不能写跨本体策略迁移成功。三个条件各一个训练种子的结果不能支持“策略侧不可补偿”；原预算K4不可判定的历史记录保留，补充完成后K4未触发，不撤销门2或P2失败。探针估计为接口有效模型量，不等于机器人真实物理参数。当前位置H对夹爪无感的原型反例、灰盒参数残差、开发扫描不可辨识和回归失败均须进入局限与方法学记录。', '',
             '## 可追溯来源','',
             '输入：`cce/results/libero_family_v1.json`、`libero_family_v2.json`、`cce_v4r1_development.json`、`libero_fallback_v4r1.json`；历史与r1主批原始JSONL分别验证6,500及15,200个唯一键；次级与采集来源另见`libero_secondary_completed_v4r1.json`和`libero_demos_completed_v4r1.json`。', '',
-            '图表：`data/cce/v4r1_20260908/figures/historical_v2_controls.pdf`、`v4r1_gate_report.pdf`；原始图与数据在/mnt/sda。', '']
+            '图表：`data/cce/v4r1_20260908/figures/historical_v2_controls.pdf`、`v4r1_gate_report.pdf`；原始图与数据在/opt/data。', '']
     idx=lines.index('## 当前证据不支持的表述');lines[idx:idx]=secondary_section()+completion_sections()+supplement_section(main_result)+multiseed_section()+planned_figure_section()
     target=Path('docs/paper/CCE_results_draft_v4r1.md');target.parent.mkdir(exist_ok=True)
     target.write_text('\n'.join(lines))

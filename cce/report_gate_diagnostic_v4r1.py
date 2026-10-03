@@ -1,4 +1,4 @@
-"""Promote the audited diagnostic summary, preserving raw runs on /mnt/sda."""
+"""Promote the audited diagnostic summary, preserving raw runs on /opt/data."""
 import json
 from pathlib import Path
 

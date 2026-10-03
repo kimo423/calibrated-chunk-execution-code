@@ -85,7 +85,7 @@ def main():
         f'./cce/env_libero.sh cce/libero_identify_v4.py --family v3 --additional-probe-dir {root}/new_probes --additional-arx {root}/new_probes/probe_summary.json --out {root}/greybox_19.json',
         f'./cce/env_libero.sh cce/report_takeover_v4.py --run-dir {root}',
         '```', '',
-        '新探针采集命令：`CUDA_VISIBLE_DEVICES=5 MUJOCO_EGL_DEVICE_ID=5 ./cce/env_libero.sh cce/libero_probe_v3.py --out-dir <新的/mnt/sda/anonymous目录>`；输出目录若已有探针则拒绝覆盖。重新采集前必须重查GPU实时状态。', '',
+        '新探针采集命令：`CUDA_VISIBLE_DEVICES=5 MUJOCO_EGL_DEVICE_ID=5 ./cce/env_libero.sh cce/libero_probe_v3.py --out-dir <新的/opt/data/anonymous目录>`；输出目录若已有探针则拒绝覆盖。重新采集前必须重查GPU实时状态。', '',
         '本报告数值由`cce/report_takeover_v4.py`生成，机器可读摘要为`cce/results/takeover_v4_20260908.json`。']
     Path('docs/reports/CCE_takeover_v4_20260908.md').write_text('\n'.join(lines)+'\n')
     self_report = '# CCE executor v4 前置自检（开发阶段）\n\n'
